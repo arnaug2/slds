@@ -1,6 +1,8 @@
 \documentclass[12pt]{beamer}
 
 \usetheme{CambridgeUS}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 
 \begin{document}
 
@@ -132,9 +134,30 @@
 % Begin Arnau Garcia
 
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para la misma aplicación en el mismo ordenador bajo los distintos SO}
-    \textbf{Arnau Garcia Garcia}
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Introducción}
+    \begin{itemize}
+    \item {Interacción entre los componentes del sistema operativo y el tiempo de ejecución sigue siendo en parte un misterio}
+    \end{itemize}
+    \begin{enumerate}
+    \item{Fallos de la memoria de traducción (TLB)}
+    \item{Interrupciones}
+    \item{Eventos asíncronos}
+    \end{enumerate}
+    \begin{itemize}
+    \item{Pueden \textbf{afectar al rendimiento} de los SO}
+    \end{itemize}
 }
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Introducción}
+    \begin{itemize}
+    \item {\textbf{Ruido}: interferencia del sistema operativo}
+    \item{Importante intentar definir/interpretar lo que consideramos ruido:}
+    \end{itemize}
+    \large{\emph{"Colección de actividades de fondo que involuntariamente interrumpen el progreso de la aplicación principal.”}}
+}
+
 
 % End Arnau Garcia
 % Begin Guillem Gordillo
