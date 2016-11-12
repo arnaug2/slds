@@ -147,54 +147,56 @@
 
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Introducción}
+    \framesubtitle{Introducció}
     \begin{itemize}
-    \item {Interacción entre los componentes del sistema operativo y el tiempo de ejecución sigue siendo en parte un misterio}
+    \item {Interacció entre els components del sistema operatiu i el temps d'execució segueix sent en part un misteri}
     \end{itemize}
     \begin{enumerate}
-    \item{Fallos de la memoria de traducción (TLB)}
-    \item{Interrupciones}
-    \item{Eventos asíncronos}
+    \item{Fallades de la memòria de traducció (TLB)}
+    \item{Interrupcions}
+    \item{Events asíncrons}
     \end{enumerate}
     \begin{itemize}
-    \item{Pueden \textbf{afectar al rendimiento} de los SO}
+    \item{Poden \textbf{afectar el rendiment} dels SO}
     \end{itemize}
 }
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Introducción}
+    \framesubtitle{Introducció}
     \begin{itemize}
-    \item {\textbf{Ruido}: interferencia del sistema operativo}
-    \item{Importante intentar definir/interpretar lo que consideramos ruido:}
+    \item {\textbf{Soroll}: interferència del sistema operatiu}
+    \item{Important intentar definir/interpretar el que es considera soroll:}
     \end{itemize}
-    \large{\emph{"Colección de actividades de fondo que involuntariamente interrumpen el progreso de la aplicación principal.”}}
+    \begin{center}
+    \large{\emph{"Col·lecció d'activitats de fons que involuntàriament interrumpeixen el progrés de l'aplicació principal.”}}
+    \end{center}
 }
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Simulación 1 - Factorial}
+    \framesubtitle{Simulació 1 - Factorial}
     \begin{itemize}
-    \item {Sistemas operativos:}
+    \item {Sistemes operatius:}
 	\begin{itemize}
 	\item\textbf{openSUSE 13.2 (Harlequin) (64 bits)}
     	\item\textbf{Windows 7 ENTERPRISE (64 bits)}
     	\end{itemize}
-    \item {Medición:}
+    \item {Medició:}
 	\begin{itemize}
 	\item\textbf{Factorial de 10}
     	\end{itemize}
-    \item {Procesador:}
+    \item {Processador:}
 	\begin{itemize}
 	\item\textbf{Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz - 64 bits}
     	\end{itemize}
-    \item {Memoria RAM:}
+    \item {Memòria RAM:}
 	\begin{itemize}
 	\item\textbf{8 GB}
     	\end{itemize}
-    \item {Nombre de equipo:}
+    \item {Nom de l'equip:}
 	\begin{itemize}
 	\item\textbf{c6s301pc42}
     	\end{itemize}
-    \item {Dominio:}
+    \item {Domini:}
 	\begin{itemize}
 	\item\textbf{FIBSMB}
     	\end{itemize}
@@ -281,30 +283,30 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
 
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Simulación 2 - Linpack Benchmark}
+    \framesubtitle{Simulació 2 - Linpack Benchmark}
     \begin{itemize}
-    \item {Sistemas operativos:}
+    \item {Sistemes operatius:}
 	\begin{itemize}
 	\item\textbf{openSUSE 13.2 (Harlequin) (64 bits)}
     	\item\textbf{Windows 7 ENTERPRISE (64 bits)}
     	\end{itemize}
-    \item {Medición:}
+    \item {Medició:}
 	\begin{itemize}
 	\item\textbf{Linpack Benchmark}
     	\end{itemize}
-    \item {Procesador:}
+    \item {Processador:}
 	\begin{itemize}
 	\item\textbf{Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz - 64 bits}
     	\end{itemize}
-    \item {Memoria RAM:}
+    \item {Memòria RAM:}
 	\begin{itemize}
 	\item\textbf{8 GB}
     	\end{itemize}
-    \item {Nombre de equipo:}
+    \item {Nom de l'equip:}
 	\begin{itemize}
 	\item\textbf{c6s301pc42}
     	\end{itemize}
-    \item {Dominio:}
+    \item {Domini:}
 	\begin{itemize}
 	\item\textbf{FIBSMB}
     	\end{itemize}
@@ -351,9 +353,14 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
 
-  \begin{center}{cl}  
+  \begin{center} 
+    \begin{figure}
+           \centering
            \includegraphics[height=6cm, width=8cm]{linuxmonitor.png}
+           \caption{Monitor CPU Linux}
+    \end{figure}
   \end{center}
+  
 }
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
@@ -411,28 +418,28 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 3 - Firefox}
     \begin{itemize}
-    \item {Sistemas operativos:}
+    \item {Sistemes operatius:}
 	\begin{itemize}
 	\item\textbf{openSUSE 13.2 (Harlequin) (64 bits)}
     	\item\textbf{Windows 7 ENTERPRISE (64 bits)}
     	\end{itemize}
-    \item {Medición:}
+    \item {Medició:}
 	\begin{itemize}
 	\item\textbf{Firefox}
     	\end{itemize}
-    \item {Procesador:}
+    \item {Processador:}
 	\begin{itemize}
 	\item\textbf{Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz - 64 bits}
     	\end{itemize}
-    \item {Memoria RAM:}
+    \item {Memòria RAM:}
 	\begin{itemize}
 	\item\textbf{8 GB}
     	\end{itemize}
-    \item {Nombre de equipo:}
+    \item {Nom de l'equip:}
 	\begin{itemize}
 	\item\textbf{c6s301pc42}
     	\end{itemize}
-    \item {Dominio:}
+    \item {Domini:}
 	\begin{itemize}
 	\item\textbf{FIBSMB}
     	\end{itemize}
@@ -475,7 +482,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 3 - Firefox}
     \begin{itemize}
-    \item\textbf{openSUSE}
+    \item\textbf{Windows 7}
    % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
     \item\textbf{@ECHO OFF
 SET START= %time% 
@@ -518,7 +525,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
 }
 \frame {
   \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-  \framesubtitle{Conclusions Simulació}
+  \framesubtitle{Conclusions Simulacions}
   \begin{itemize}
   	\item\ No únicament el SO afecta en els temps/recursos
   	\item\ Hi ha \textbf{"Soroll"} que afecta
@@ -555,12 +562,15 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
 
   \begin{tabular}{cl}  
          \begin{tabular}{c}
+       %  \begin{figure}
            \includegraphics[height=6cm, width=5cm]{efectos_visuales.png}
+         %  \caption{Efectos Visuales Windows 7}
+        % \end{figure}
            \end{tabular}
            & \begin{tabular}{l}
              \parbox{0.5\linewidth}{
 	     \begin{itemize}
-             \item{Desactivar efectos visuales}
+             \item{Desactivar efectes visuals}
 	     \end{itemize}}
          \end{tabular}  \\
 \end{tabular}
@@ -572,6 +582,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
   \begin{tabular}{cl}  
          \begin{tabular}{c}
            \includegraphics[height=3cm, width=2.5cm]{desactivar-uac.png}
+         %  \caption{Control de cuentas de usuarios de Windows 7}
            \end{tabular}
            & \begin{tabular}{l}
              \parbox{0.5\linewidth}{
@@ -590,7 +601,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
     \begin{figure}
            \centering
            \includegraphics[height=5cm, width=7cm]{liberador-espacio-windows.png}
-           \caption{Liberador Espacio Windows}
+           \caption{Alliberador d'espai en disc Windows 7}
     \end{figure}
   \end{center}
 }
@@ -614,7 +625,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
     \begin{figure}
            \centering
            \includegraphics[height=5cm, width=7cm]{ccleaner.png}
-           \caption{Ccleaner}
+           \caption{CCleaner}
     \end{figure}
   \end{center}
 }
