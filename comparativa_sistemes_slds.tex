@@ -3,6 +3,8 @@
 \usetheme{CambridgeUS}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
+\usepackage{listings}
+
 
 \begin{document}
 
@@ -166,6 +168,354 @@
     \end{itemize}
     \large{\emph{"Colección de actividades de fondo que involuntariamente interrumpen el progreso de la aplicación principal.”}}
 }
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulación 1 - Factorial}
+    \begin{itemize}
+    \item {Sistemas operativos:}
+	\begin{itemize}
+	\item\textbf{openSUSE 13.2 (Harlequin) (64 bits)}
+    	\item\textbf{Windows 7 ENTERPRISE (64 bits)}
+    	\end{itemize}
+    \item {Medición:}
+	\begin{itemize}
+	\item\textbf{Factorial de 10}
+    	\end{itemize}
+    \item {Procesador:}
+	\begin{itemize}
+	\item\textbf{Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz - 64 bits}
+    	\end{itemize}
+    \item {Memoria RAM:}
+	\begin{itemize}
+	\item\textbf{8 GB}
+    	\end{itemize}
+    \item {Nombre de equipo:}
+	\begin{itemize}
+	\item\textbf{c6s301pc42}
+    	\end{itemize}
+    \item {Dominio:}
+	\begin{itemize}
+	\item\textbf{FIBSMB}
+    	\end{itemize}
+    \end{itemize}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 1 - Factorial}
+    \begin{itemize}
+    \item\textbf{openSUSE}
+   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
+    \item\textbf{!/bin/bash
+	START="$(($(date +%s%N)/1000000))"
+	cd /home/Desktop/
+	./factorial.out
+	END="$(($(date +%s%N)/1000000))" 
+	TOTAL=$(($END-$START))
+	echo "END: "$END "START: "$START "TOTAL: "$TOTAL}
+    \end{itemize}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 1 - Factorial}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=8cm, width=7cm]{factorial_open_suse.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{openSUSE}
+	     \item\textbf{4 Mil·lisegons}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 1 - Factorial}
+    \begin{itemize}
+    \item\textbf{Windows}
+   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
+    \item\textbf{@ECHO OFF
+SET START= %time% 
+start /WAIT a.exe
+SET END= %time% 
+SET /a TOTAL = %END% - %START%
+ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
+    \end{itemize}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 1 - Factorial}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=4cm, width=7cm]{factorial_windows7.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{Windows 7}
+	     \item\textbf{19 Mil·lisegons}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+
+\frame {
+  \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+  \framesubtitle{Simulació 1 - Factorial}
+  \begin{itemize}
+  \item\textbf{openSUSE}
+	  \begin{itemize}
+	  \item{4 Mil·lisegons}
+	  \end{itemize}
+  \item\textbf{Windows 7}
+	  \begin{itemize}
+	  \item{19 Mil·lisegons}
+	  \end{itemize}
+   \end{itemize}
+}
+
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulación 2 - Linpack Benchmark}
+    \begin{itemize}
+    \item {Sistemas operativos:}
+	\begin{itemize}
+	\item\textbf{openSUSE 13.2 (Harlequin) (64 bits)}
+    	\item\textbf{Windows 7 ENTERPRISE (64 bits)}
+    	\end{itemize}
+    \item {Medición:}
+	\begin{itemize}
+	\item\textbf{Linpack Benchmark}
+    	\end{itemize}
+    \item {Procesador:}
+	\begin{itemize}
+	\item\textbf{Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz - 64 bits}
+    	\end{itemize}
+    \item {Memoria RAM:}
+	\begin{itemize}
+	\item\textbf{8 GB}
+    	\end{itemize}
+    \item {Nombre de equipo:}
+	\begin{itemize}
+	\item\textbf{c6s301pc42}
+    	\end{itemize}
+    \item {Dominio:}
+	\begin{itemize}
+	\item\textbf{FIBSMB}
+    	\end{itemize}
+    \end{itemize}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 2 - Linpack Benchmark}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=7cm, width=6cm]{linpack_linux.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{openSUSE}
+	     \item\textbf{Matrius 7500x7500}
+	     \item\textbf{Promig 10 proves}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 2 - Linpack Benchmark}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=7cm, width=6cm]{linpack_linux.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{openSUSE}
+	     \item\textbf{Matrius 7500x7500}
+	     \item\textbf{Promig 10 proves}
+	     \item\textbf{86.3305 GFLOPS}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 2 - Linpack Benchmark}
+
+  \begin{center}{cl}  
+           \includegraphics[height=6cm, width=8cm]{linuxmonitor.png}
+  \end{center}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 2 - Linpack Benchmark}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=7cm, width=6cm]{linpack_windows.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{Windows 7}
+	     \item\textbf{Matrius 7500x7500}
+	     \item\textbf{Promig 10 proves}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 2 - Linpack Benchmark}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=7cm, width=6cm]{linpack_windows.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{openSUSE}
+	     \item\textbf{Matrius 7500x7500}
+	     \item\textbf{Promig 10 proves}
+	     \item\textbf{81.951 GFLOPS}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+  \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+  \framesubtitle{Simulació 2 - Linpack Benchmark}
+  \begin{itemize}
+  \item\textbf{openSUSE}
+	  \begin{itemize}
+	  \item{86.3305 GFLOPS}
+	  \end{itemize}
+  \item\textbf{Windows 7}
+	  \begin{itemize}
+	  \item{81.951 GFLOPS}
+	  \end{itemize}
+   \end{itemize}
+}
+
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 3 - Firefox}
+    \begin{itemize}
+    \item {Sistemas operativos:}
+	\begin{itemize}
+	\item\textbf{openSUSE 13.2 (Harlequin) (64 bits)}
+    	\item\textbf{Windows 7 ENTERPRISE (64 bits)}
+    	\end{itemize}
+    \item {Medición:}
+	\begin{itemize}
+	\item\textbf{Firefox}
+    	\end{itemize}
+    \item {Procesador:}
+	\begin{itemize}
+	\item\textbf{Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz - 64 bits}
+    	\end{itemize}
+    \item {Memoria RAM:}
+	\begin{itemize}
+	\item\textbf{8 GB}
+    	\end{itemize}
+    \item {Nombre de equipo:}
+	\begin{itemize}
+	\item\textbf{c6s301pc42}
+    	\end{itemize}
+    \item {Dominio:}
+	\begin{itemize}
+	\item\textbf{FIBSMB}
+    	\end{itemize}
+    \end{itemize}
+}
+
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 3 - Firefox}
+    \begin{itemize}
+    \item\textbf{openSUSE}
+   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
+    \item\textbf{!/bin/bash
+	START="$(($(date +%s%N)/1000000))"
+	cd /home/Desktop/ %firefox "http://www.google.com/" &
+	./factorial.out
+	END="$(($(date +%s%N)/1000000))" 
+	TOTAL=$(($END-$START))
+	echo "END: "$END "START: "$START "TOTAL: "$TOTAL}
+    \end{itemize}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 3 - Firefox}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=2cm, width=7cm]{firefox_open_suse1.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{openSUSE}
+	     \item\textbf{1 Mil·lisegon}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 3 - Firefox}
+    \begin{itemize}
+    \item\textbf{openSUSE}
+   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
+    \item\textbf{@ECHO OFF
+SET START= %time% 
+start firefox http://google.com
+SET END= %time% 
+SET /a TOTAL = %END% - %START%
+ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
+    \end{itemize}
+}
+\frame {
+    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \framesubtitle{Simulació 3 - Firefox}
+
+  \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[height=2.5cm, width=7cm]{firefox-windows.png}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.5\linewidth}{
+	     \begin{itemize}
+             \item\textbf{Windows 7}
+	     \item\textbf{19 Mil·lisegons}
+	     \end{itemize}}
+         \end{tabular}  \\
+\end{tabular}
+}
+\frame {
+  \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+  \framesubtitle{Simulació 3 - Firefox}
+  \begin{itemize}
+  \item\textbf{openSUSE}
+	  \begin{itemize}
+	  \item{1 Mil·lisegon}
+	  \end{itemize}
+  \item\textbf{Windows 7}
+	  \begin{itemize}
+	  \item{19 Mil·lisegons}
+	  \end{itemize}
+   \end{itemize}
+}
+
 
 
 % End Arnau Garcia
