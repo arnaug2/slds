@@ -5,6 +5,8 @@
 \usepackage{lmodern}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage[font=scriptsize,labelfont=bf]{caption}
+\usepackage{subcaption}
 
 
 \begin{document}
@@ -138,9 +140,135 @@
 % Begin Miquel Xamani
 
 \frame {
-    \frametitle{Uso de recursos del sistema (usuario y/o servidor)}
-    \textbf{Miquel Xamani}
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Windows}
+    \begin{itemize}
+    \item{Administrador de tasques}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=7cm, height=5cm, keepaspectratio]{administrador_tasques.png}
+        \caption{Administrador de tasques a Windows 10}
+      \end{figure}
+    \end{center}
 }
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Windows}
+    \begin{itemize}
+    \item{Administrador de tasques}
+    \item{Eines de tercers com System Explorer o CPU-Z}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=7cm, height=5cm, keepaspectratio]{systemexplorer.jpg}
+        \caption{System explorer}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Ubuntu}
+    \begin{itemize}
+    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=4cm, height=3cm, keepaspectratio]{top_command.png}
+          \caption{Sortida comanda top}
+        \end{subfigure}
+        \qquad
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=5.5cm, height=4cm, keepaspectratio]{vmstat_command.png}
+          \caption{Sortida comanda vmstat}
+        \end{subfigure}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Ubuntu}
+    \begin{itemize}
+    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...}
+    \item{Monitor del sistema}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=7cm, height=4cm, keepaspectratio]{monitor_del_sistema.png}
+        \caption{Monitor del sistema}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Ubuntu}
+    \begin{itemize}
+    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...}
+    \item{Monitor del sistema}
+    \item{Eines de tercers com I-Nex o Conky}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=\textwidth]{i-nex_drive_reference.jpg}
+          \caption{I-Nex}
+        \end{subfigure}
+        \qquad
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=\textwidth]{conky-por-defecto.jpg}
+          \caption{Conky per defecte}
+        \end{subfigure}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a MacOS}
+    \begin{itemize}
+    \item{Monitor de actividad}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=7cm, height=4cm, keepaspectratio]{activity_monitor.png}
+        \caption{Monitor de actividad}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Monitoritzar l’ús dels recursos del sistema a MacOS}
+    \begin{itemize}
+    \item{Monitor de actividad}
+    \item{Eines de tercers com iStat Menus i StatsBar}
+    \end{itemize}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=5cm, height=4cm, keepaspectratio]{istat_menus.png}
+          \caption{iStat Menus}
+        \end{subfigure}
+        \qquad
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=3cm, height=4cm, keepaspectratio]{statsbar.png}
+          \caption{StatsBar}
+        \end{subfigure}
+      \end{figure}
+    \end{center}
+}
+
 
 % End Miquel Xamani
 % Begin Arnau Garcia
