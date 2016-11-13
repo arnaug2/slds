@@ -384,21 +384,22 @@
     	\end{itemize}
     \end{itemize}
 }
-\frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Simulació 1 - Factorial}
-    \begin{itemize}
-    \item\textbf{openSUSE}
-   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
-    \item\textbf{!/bin/bash
-	START="$(($(date +%s%N)/1000000))"
-	cd /home/Desktop/
-	./factorial.out
-	END="$(($(date +%s%N)/1000000))" 
-	TOTAL=$(($END-$START))
-	echo "END: "$END "START: "$START "TOTAL: "$TOTAL}
-    \end{itemize}
-}
+
+\begin{frame}[fragile]
+\frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+\framesubtitle{Simulació 1 - Factorial}
+\textbf{openSUSE}	     
+  \begin{lstlisting}
+ #!/bin/bash
+START="$(($(date +%s%N)/1000000))"
+cd /home/Desktop/
+./factorial.out
+END="$(($(date +%s%N)/1000000))" 
+TOTAL=$(($END-$START))
+echo "END: "$END "START: "$START "TOTAL: "$TOTAL
+    \end{lstlisting}
+\end{frame}
+
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 1 - Factorial}
@@ -416,20 +417,21 @@
          \end{tabular}  \\
 \end{tabular}
 }
-\frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Simulació 1 - Factorial}
-    \begin{itemize}
-    \item\textbf{Windows}
-   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
-    \item\textbf{@ECHO OFF
+\begin{frame}[fragile]
+\frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+\framesubtitle{Simulació 1 - Factorial}
+\textbf{Windows 7}	     
+  \begin{lstlisting}
+ @ECHO OFF
 SET START= %time% 
 start /WAIT a.exe
 SET END= %time% 
 SET /a TOTAL = %END% - %START%
-ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
-    \end{itemize}
-}
+ECHO END:} %END% START: %START% TOTAL: %TOTAL%
+    \end{lstlisting}
+\end{frame}
+
+
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 1 - Factorial}
@@ -628,21 +630,20 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
     \end{itemize}
 }
 
-\frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Simulació 3 - Firefox}
-    \begin{itemize}
-    \item\textbf{openSUSE}
-   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
-    \item\textbf{!/bin/bash
+\begin{frame}[fragile]
+\frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+\framesubtitle{Simulació 3 - Firefox}
+\textbf{openSUSE}	     
+  \begin{lstlisting}
+ #!/bin/bash
 	START="$(($(date +%s%N)/1000000))"
-	cd /home/Desktop/ %firefox "http://www.google.com/" &
-	./factorial.out
+	firefox "http://www.google.com/" &
 	END="$(($(date +%s%N)/1000000))" 
 	TOTAL=$(($END-$START))
-	echo "END: "$END "START: "$START "TOTAL: "$TOTAL}
-    \end{itemize}
-}
+	echo "END: "$END "START: "$START "TOTAL: "$TOTAL
+    \end{lstlisting}
+\end{frame}
+
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 3 - Firefox}
@@ -660,20 +661,21 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
          \end{tabular}  \\
 \end{tabular}
 }
-\frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
-    \framesubtitle{Simulació 3 - Firefox}
-    \begin{itemize}
-    \item\textbf{Windows 7}
-   % \begin{lstlisting}[language=bash,caption={bash version}]#!/bin/bashecho "Hello, world!"\end{lstlisting}
-    \item\textbf{@ECHO OFF
+
+\begin{frame}[fragile]
+\frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+\framesubtitle{Simulació 3 - Firefox}
+\textbf{Windows 7}	     
+  \begin{lstlisting}
+ @ECHO OFF
 SET START= %time% 
 start firefox http://google.com
 SET END= %time% 
 SET /a TOTAL = %END% - %START%
-ECHO END:} %END% START: %START% TOTAL: %TOTAL%}
-    \end{itemize}
-}
+ECHO END:} %END% START: %START% TOTAL: %TOTAL%
+    \end{lstlisting}
+\end{frame}
+
 \frame {
     \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 3 - Firefox}
