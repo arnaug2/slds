@@ -192,6 +192,63 @@
 
 % End Sergi Soriano
 % Begin Miquel Xamani
+\frame {
+	\frametitle{Comparativa entre servidors NFS Windows i Linux}
+	\framesubtitle{Entorn}
+	\underline{Client}
+	\vspace{2mm}
+	\begin{itemize}
+		\item{Benchmarks executats des d’un client Linux CentOS 7.1}
+	\end{itemize}
+	\vspace{5mm}
+	\underline{Servidor}
+	\vspace{2mm}
+	\begin{itemize}
+		\item{Servidor NFS Linux CentOS 7.1}
+		\item{Servidor NFS Windows 2012 Data Center Edition}
+		\item{\textbf{Igualtat de condicions} $\rightarrow$ Els 2 servidors tenen 2GB de RAM, 2 cores,  exactament el mateix hardware,  mateixa versió de NFS (4.1), 40 GB de disc assignats exclusivament pel benchmark i tenen un disc secundari per les accions del SO.}
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Comparativa entre servidors NFS Windows i Linux}
+	\framesubtitle{Test}
+	S'ha utilitzat \textbf{IOZone Benchmark} per mesurar les operacions:
+	\vspace{3mm}
+	\begin{itemize}
+		\item{Sequential Write}
+		\item{Sequential Read}
+		\item{Random Write}
+		\item{Random Read}
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Comparativa entre servidors NFS Windows i Linux}
+	\framesubtitle{Resultats}
+	\underline{Mètriques}
+	\vspace{3mm}
+	\begin{itemize}
+		\item{\textbf{File size}: tamany del fitxer llegit/escrit}
+		\item{\textbf{Record size}: tamany de la partició que constitueix un fitxer}
+		\item{\textbf{MBps}: velocitat en què un fitxer és llegit/escrit de disc}
+	\end{itemize}
+}
+
+\frame {
+    \frametitle{Comparativa entre servidors NFS Windows i Linux}
+    \framesubtitle{Resultats Sequential Write}
+      \begin{figure}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=5cm, height=8cm, keepaspectratio]{windows-nfs-write.jpg}
+        \end{subfigure}
+        \qquad
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=5cm, height=8cm, keepaspectratio]{linux-nfs-write.jpg}
+        \end{subfigure}
+      \end{figure}
+}
+
 
 \frame {
     \frametitle{Ús de recursos del sistema}
@@ -228,7 +285,7 @@
     \frametitle{Ús de recursos del sistema}
     \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Ubuntu}
     \begin{itemize}
-    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...}
+    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...)}
     \end{itemize}
     \begin{center} 
       \begin{figure}
@@ -249,7 +306,7 @@
     \frametitle{Ús de recursos del sistema}
     \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Ubuntu}
     \begin{itemize}
-    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...}
+    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...)}
     \item{Monitor del sistema}
     \end{itemize}
     \begin{center} 
@@ -265,7 +322,7 @@
     \frametitle{Ús de recursos del sistema}
     \framesubtitle{Monitoritzar l’ús dels recursos del sistema a Ubuntu}
     \begin{itemize}
-    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...}
+    \item{Línia de comandes (top, free, vmstat, iostat, ps, du, df ...)}
     \item{Monitor del sistema}
     \item{Eines de tercers com I-Nex o Conky}
     \end{itemize}
@@ -319,6 +376,42 @@
           \includegraphics[width=3cm, height=4cm, keepaspectratio]{statsbar.png}
           \caption{StatsBar}
         \end{subfigure}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Requisits mínims}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=9cm, height=6cm, keepaspectratio]{requisits_minims1.png}
+        \caption{Requisits mínims Windows 10 i Ubuntu 16.04 LTS}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Requisits mínims}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=10cm, height=7cm, keepaspectratio]{requisits_minims2.png}
+        \caption{Requisits mínims Windows 10, Ubuntu 16.04 LTS i MacOS Sierra}
+      \end{figure}
+    \end{center}
+}
+
+\frame {
+    \frametitle{Ús de recursos del sistema}
+    \framesubtitle{Ús d'espai de disc}
+    \begin{center} 
+      \begin{figure}
+        \centering
+        \includegraphics[width=9cm, height=6cm, keepaspectratio]{disk_space_usage.png}
+        \caption{Ús d'espai de disc de versions d'Ubuntu i Windows antigues}
       \end{figure}
     \end{center}
 }

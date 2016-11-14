@@ -1,0 +1,11 @@
+\frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+\framesubtitle{Simulació 3 - Firefox}
+\textbf{Windows 7}
+  \begin{lstlisting}
+ @ECHO OFF
+SET START= %time%
+start firefox http://google.com
+SET END= %time%
+SET /a TOTAL = %END% - %START%
+ECHO END:} %END% START: %START% TOTAL: %TOTAL%
+    \end{lstlisting}
