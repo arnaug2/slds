@@ -240,15 +240,83 @@
     \framesubtitle{Resultats Sequential Write}
       \begin{figure}
         \begin{subfigure}[b]{0.3\textwidth}
-          \includegraphics[width=5cm, height=8cm, keepaspectratio]{windows-nfs-write.jpg}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{windows-nfs-write.jpg}
         \end{subfigure}
-        \qquad
+        \hspace*{\fill}
         \begin{subfigure}[b]{0.3\textwidth}
-          \includegraphics[width=5cm, height=8cm, keepaspectratio]{linux-nfs-write.jpg}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{linux-nfs-write.jpg}
         \end{subfigure}
+        \hspace*{\fill}
       \end{figure}
 }
 
+\frame {
+    \frametitle{Comparativa entre servidors NFS Windows i Linux}
+    \framesubtitle{Resultats Sequential Read}
+      \begin{figure}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{windows-nfs-read.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{linus-nfs-read.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+      \end{figure}
+}
+
+\frame {
+    \frametitle{Comparativa entre servidors NFS Windows i Linux}
+    \framesubtitle{Resultats Random Write}
+      \begin{figure}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{windows-nfs-random-write.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{linux-nfs-random-write.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+      \end{figure}
+}
+
+\frame {
+    \frametitle{Comparativa entre servidors NFS Windows i Linux}
+    \framesubtitle{Resultats Random Write}
+      \begin{figure}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{windows-nfs-random-write2.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{linux-nfs-random-write2.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+      \end{figure}
+}
+
+\frame {
+    \frametitle{Comparativa entre servidors NFS Windows i Linux}
+    \framesubtitle{Resultats Random Read}
+      \begin{figure}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{windows-nfs-random-read.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+        \begin{subfigure}[b]{0.3\textwidth}
+          \includegraphics[width=6cm, height=8cm, keepaspectratio]{linux-nfs-random-read.jpg}
+        \end{subfigure}
+        \hspace*{\fill}
+      \end{figure}
+}
+
+\frame {
+	\frametitle{Comparativa entre servidors NFS Windows i Linux}
+	\framesubtitle{Conclusió}
+	\underline{Conclusió}\\
+	\vspace{3mm}
+	\textbf{El servidor Linux ofereix millor rendiment i és més constant que Windows en la majoria de tests.}
+}
 
 \frame {
     \frametitle{Ús de recursos del sistema}
@@ -559,7 +627,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
 }
 
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
     \begin{itemize}
     \item {Sistemes operatius:}
@@ -590,7 +658,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
     \end{itemize}
 }
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
 
   \begin{tabular}{cl}  
@@ -608,7 +676,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
 \end{tabular}
 }
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
 
   \begin{tabular}{cl}  
@@ -627,7 +695,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
 \end{tabular}
 }
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
 
   \begin{center} 
@@ -640,7 +708,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
   
 }
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
 
   \begin{tabular}{cl}  
@@ -658,7 +726,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
 \end{tabular}
 }
 \frame {
-    \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+    \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
     \framesubtitle{Simulació 2 - Linpack Benchmark}
 
   \begin{tabular}{cl}  
@@ -677,7 +745,7 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
 \end{tabular}
 }
 \frame {
-  \frametitle{Comparativa de tiempos/recursos para una aplicación en el mismo PC bajo distintos SO}
+  \frametitle{Comparativa de rendimiento para una aplicación en el mismo PC bajo distintos SO}
   \framesubtitle{Simulació 2 - Linpack Benchmark}
   \begin{itemize}
   \item\textbf{openSUSE}
