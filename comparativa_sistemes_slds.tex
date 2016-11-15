@@ -1214,7 +1214,181 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
 
 \frame {
     \frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
-    \textbf{Guillem Gordillo}
+	\framesubtitle {Simulació a Windows}
+	\begin{itemize}
+		\item Simular linux a windows és pesat.
+		\item El més fet servir és la màquina virtual.
+		\item Simular linux per paquets. \textbf{Cygwin.}
+		\item Simular mac mitjançant \textbf{Basilik II.}
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Cygwin}
+	Conté tres parts diferenciades:
+	\begin{itemize}
+		\item Biblioteca d'enllaç dinàmic que fa crides a la API nativa de windows.
+		\item Cadena de desenvolupament GNU, entre d'altres GCC i GDB.
+		\item Aplicacions equivalents als programes més comuns de UNIX.
+		\item Falta de suport Unicode.
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Cygwin}
+	Cygnus Solutions - Red Hat
+	\begin{center}
+		\begin{figure}
+			\centering
+           \includegraphics[height=5cm, width=7cm]{Cygwin.png}
+           \caption{Cygwin}
+		\end{figure}
+	\end{center}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Basilik II}
+	\begin{itemize}
+		\item Fàcil d'utilitzar i d'instalar.
+		\item Baix rendiment i està limitada fins a la versió 8.1.
+	\end{itemize}
+	\begin{center}
+		\begin{figure}
+			\centering
+            \includegraphics[height=4cm, width=6cm]{basilik.jpg}
+            \caption{Basilik II}
+		\end{figure}
+	\end{center}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Simulació de Windows}
+	\begin{itemize}	
+		\item Gran quantitat de simuladors de windows. 
+		\item Tests de noves versions/jocs.
+		\item Principalment se sol fer fent servir màquines virtuals.
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {CrossOver}
+	Simular Windows a Linux mitjançant CrossOver.
+	\begin{itemize}
+		\item Basat en Wine.
+		\item Simula molt bé el mètode d'instal·lació de windows.
+		\item Disposa d'un llistat d'aplicacions que estan soportades.
+	\end{itemize}
+	
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {CrossOver}
+	Principal inconvenient: no és gratis.
+	\begin{center}
+		\begin{figure}
+			\centering
+       		\includegraphics[height=5cm, width=7cm]{01crossover.png}
+       		\caption{CrossOver}
+		\end{figure}
+	\end{center}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {PlayOnLinux}
+	\begin{itemize}
+		\item Fet amb la combinació de Bash i python.
+		\item El sistema ofereix scripts per especificar la configuració.
+		\item Els scripts estan en una BD online.
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {PlayOnLinux}
+	\begin{center}
+		\begin{figure}
+			\centering
+       		\includegraphics[height=5cm, width=7cm]{PlayOnLinux-Screenshot.png}
+       		\caption{PlayOnLinux}
+		\end{figure}
+	\end{center}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Wine}
+	\begin{itemize}
+		\item Windows emulator, posteriorment Wine Is Not an Emulator.
+		\item L'objectiu és executar aplicacions basades en Windows a sistemes UNIX.
+		\item Desenvolupat mitjançant "black-box testing" i enginyeria inversa. 
+		\item Simulador més extés entre els usuaris de sistemes UNIX.
+	\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Wine}
+	Emular sol ser molt més lent, però wine aconsegueix executar les aplicacions en velocitat nativa.
+	\begin{center}
+		\begin{figure}
+			\centering
+       		\includegraphics[height=4cm, width=6cm]{wine.jpg}
+       		\caption{WineBottler}
+		\end{figure}
+	\end{center}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Interoperabilitat}
+		\begin{itemize}
+			\item Cada dia la interoperabilitat és millor entre les diferents distribucions tot i que windows és el que n'ofereix menys.
+			\item Protocols i estàndards.
+			\item Cal destacar principalment:\textbf{Samba.}
+		\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Interoperabilitat}
+		\begin{itemize}
+			\item Lliure de protocols d'arxius compartits. 
+			\item Creat com a sniffer per a entendre fent servir enginyeria inversa el protocol de comunicació.
+			\item La configuració s'edita en un sol arxiu, /etc/samba/smb.conf.
+			\item Per als usuaris de windows les carpetes apareixen normals, però els clients Linux poden montar els seus sistemes o connectar-se a les carpetes que es comparteixin.
+		\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Samba}
+	Principals serveis de Samba:
+		\begin{itemize}
+			\item Accés a recursos de xarxa.
+			\item Autenticació i control d'accessos
+			\item Resolució de noms
+			\item Publicació de serveis
+		\end{itemize}
+}
+
+\frame {
+	\frametitle{Posibilidades de simulación / virtualización en unos y otros. Interoperabilidad}
+	\framesubtitle {Samba}
+	Configuració bàsica.
+	\begin{center}
+		\begin{figure}
+			\centering
+       		\includegraphics[height=5cm, width=7cm]{smb-conf.png}
+       		\caption{Configuració Samba}
+		\end{figure}
+	\end{center}
 }
 
 % End Guillem Gordillo
@@ -1256,6 +1430,5 @@ ECHO END:} %END% START: %START% TOTAL: %TOTAL%
         \item {http://www.tuxradar.com/content/benchmarked-ubuntu-vs-vista-vs-windows-7}
     \end{itemize}
 }
-
 
 \end{document}
